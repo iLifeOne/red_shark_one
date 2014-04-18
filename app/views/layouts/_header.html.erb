@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "iLifeOne", '#', id: "logo" %>
+      <nav>
+        <ul class="nav">
+          <li><%= link_to "home",       root_path %></li>
+          <li><%= link_to "about us",   about_path %></li>
+          <li><%= link_to "contact us", contact_path %></li>
+          <li><%= link_to "help",       help_path %></li>
+          <li></li>
+        </ul>
+      </nav>
+      <%= link_to "sign in", '#', class: "btn btn-small btn-success pull-right"  %>
+    </div>
+  </div>
+</header>
