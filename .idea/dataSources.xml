@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2831851900">
+  <component name="DataSourceManagerImpl" format="xml" hash="3862208143">
     <data-source source="LOCAL" name="Rails i_Life_One: development" uuid="a4986238-584a-4485-babf-da3621a94c04">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails i_Life_One: test" uuid="c5534cd5-4c73-444c-8e53-ce2deb6d097a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://&lt;%= ENV['STARTER_APP_TEST_DB_HOST'] || 'localhost' %&gt;:&lt;%= ENV['STARTER_APP_TEST_DB_PORT'] || '5432' %&gt;/&lt;%= ENV['STARTER_APP_TEST_DB_DATABASE'] || 'starterapp_test' %&gt;</jdbc-url>
+      <user-name>&lt;%= ENV['STARTER_APP_TEST_DB_USER'] || 'postgres' %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dffedfebdff8dffedfefdff8dff5dfebdffadffadff5dffedfefdff9dffedff5dfeedfe8dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails i_Life_One: production" uuid="6c7a4732-8de5-483f-bf07-0c600084549a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:starterapp_production</jdbc-url>
+      <user-name>postgres</user-name>
       <libraries />
     </data-source>
   </component>

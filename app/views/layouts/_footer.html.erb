@@ -1,15 +1,21 @@
-<footer class="footer">
-  <div class="container">
-      <small>
-        © iLifeOne <%= Time.now.year %>
-      </small>
-      <nav>
-        <ul>
-          <li><%= link_to "home",       root_path %></li>
-          <li><%= link_to "about us",   about_path %></li>
-          <li><%= link_to "contact us", contact_path %></li>
-          <li><%= link_to "help",       help_path %></li>
-        </ul>
-      </nav>
-  </div>
-</footer>
+<div class="container">
+    <div class="col-md-12">
+    <small>
+        © iLife<b>One</b>, Inc.&nbsp; <%= Time.now.year %>
+    </small>
+        <nav>
+            <ul class="nav">
+                <li><%= link_to "home",       root_path %></li>
+                <li><%= link_to "about us",   about_path %></li>
+                <li><%= link_to "contact us", contact_path %></li>
+                <li>
+                  <a href='/help'><i class='fa fa-question-circle fa-2x'></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-12">
+        <a href='/'><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
+        <a href='/'><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
+    </div>
+</div>

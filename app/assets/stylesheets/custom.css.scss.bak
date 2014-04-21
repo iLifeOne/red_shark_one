@@ -57,32 +57,19 @@ p {
 /* header */
 
 #logo {
-  color: #999;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
+  color: #fff;
   letter-spacing: -1px;
   padding-top: 9px;
+  font-weight: bold;
   line-height: 1;
 }
 
 #logo:hover {
   color: #fff;
   text-decoration: none;
-}
-
-.btn-padding {
-  padding-top: 7px;
-}
-
-header ul {
-  float: left;
-  list-style: none;
-}
-
-header ul li {
-  float: left;
-  margin-left: 10px;
 }
 
 /* footer */
@@ -94,7 +81,12 @@ footer {
   background-color: #000;
 }
 
+footer a {
+  color: #333;
+}
+
 footer a:hover {
+  color: #fff;
   text-decoration: none;
 }
 

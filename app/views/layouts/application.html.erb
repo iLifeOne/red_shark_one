@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag "application", media: "all",
-                          "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 <body>
-    <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-    </div>
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <%= render 'layouts/navigation' %>
+</header>
+<div class="container">
+  <%= yield %>
+</div>
+<footer class="navbar navbar-bottom navbar-inverse">
     <%= render 'layouts/footer' %>
+</footer>
 </body>
 </html>
