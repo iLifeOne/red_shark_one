@@ -1,0 +1,26 @@
+<tr>
+    <td>
+        <%= user.fname %>&nbsp;<%= user.lname %>
+    </td>
+    <td>
+        <%= user.company %>
+    </td>
+    <td>
+        <%= user.email %>
+    </td>
+    <td class="text-center">
+        <!-- Split button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-primary">action</button>
+        <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu text-left" role="menu">
+            <li><a href="#"><i class='fa fa-users'></i>&nbsp;Make Admin</a></li>
+            <li><%= link_to '<i class="fa fa-times-circle-o"></i> Delete'.html_safe, user, method: :delete, data: { confirm: "You sure?" } %></li>
+        </ul>
+        </div>
+        <!-- end Split button -->
+    </td>
+</tr>
