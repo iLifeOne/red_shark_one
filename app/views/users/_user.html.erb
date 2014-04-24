@@ -17,8 +17,10 @@
             <span class="sr-only">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu text-left" role="menu">
-            <li><a href="#"><i class='fa fa-users'></i>&nbsp;Make Admin</a></li>
-            <li><%= link_to '<i class="fa fa-times-circle-o"></i> Delete'.html_safe, user, method: :delete, data: { confirm: "You sure?" } %></li>
+            <li><a href="#"><i class='fa fa-share-square-o'></i>&nbsp;approve download</a></li>
+            <li><a href="#"><i class='fa fa-user'></i>&nbsp;super user</a></li>
+            <li><a href="#"><i class='fa fa-magic'></i>&nbsp;make admin</a></li>
+            <li><%= link_to '<i class="fa fa-times"></i> delete'.html_safe, user, method: :delete, data: { confirm: "You sure?" } %></li>
         </ul>
         </div>
         <!-- end Split button -->
