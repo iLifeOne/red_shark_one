@@ -18,8 +18,9 @@
     <data-source source="LOCAL" name="Rails i_Life_One: production" uuid="6c7a4732-8de5-483f-bf07-0c600084549a">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:starterapp_production</jdbc-url>
-      <user-name>postgres</user-name>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-250-40.compute-1.amazonaws.com:5432/d751j9j3v7n6br</jdbc-url>
+      <user-name>aryxfbiywhxfrh</user-name>
+      <user-password>dfe0dfc6df87dff3df9edfe5dfd0dfe5dfe1dfe2df9bdfdddfcddfdfdff8dfdedf9fdfc0dfd8dfe8dff3dfcddfeedff5dfffdff8</user-password>
       <libraries />
     </data-source>
   </component>
